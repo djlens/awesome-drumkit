@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #ece4d9;
+    
+   
+}
+
+main {
+    width: 900px;
+    height: 600px;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-image: url("/images/46e91371060454eeb1e9626ff4618595.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.keys {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    top: 254px;
+    right: 152px;
+    gap: 0.7em
+}
+
+.key {
+    width: 3.22em;
+    height: 3.22em;
+    text-align: center;
+    display: flex;
+    transition: transform 0.06s;
+}
+
+.playing {
+    transform: scale(1.1);
+    /* border: 3px solid #ffc600; */
+    background-color: #ffc600;
+    border-radius: 10%;
+}
+
+kbd {
+    margin: auto auto;
+    font-size: 1.3em;
+    color: white;
+}
+
